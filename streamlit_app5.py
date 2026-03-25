@@ -865,7 +865,7 @@ with st.sidebar:
     df_all = None
     try:
         with st.spinner("Loading climate data..."):
-            df_all = pd.read_excel("Data/climate_master.xlsx")
+            df_all = pd.read_excel("climate_master.xlsx")
             # Normalize column names to match expected format
             df_all.columns = [c.strip().lower() for c in df_all.columns]
             # Rename Latitude/Longitude to lowercase
